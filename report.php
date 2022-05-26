@@ -21,14 +21,14 @@
 		$mail->isSMTP();
 		$mail->Host = "smtp.gmail.com";
 		$mail->SMTPAuth = true;
-		$mail->Username = "akshitjain0210@gmail.com";
-		$mail->Password = 'osp@12345';
+		$mail->Username = "xyz@gmail.com";
+		$mail->Password = 'password';
 		$mail->Port = 465;
 		$mail->SMTPSecure = "ssl";
 
 		//email settings
 		$mail->isHTML(true);
-		$mail->setFrom('akshitjain0210@gmail.com', 'Akshit');
+		$mail->setFrom('xyz@gmail.com', 'xyz');
 		$mail->addAddress($_GET['email']);
 		$mail->Subject = ("MattDaan OTP Verification");
 		$mail->Body = $body;
